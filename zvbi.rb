@@ -22,3 +22,18 @@ class Zvbi < Formula
     system "make", "install"
   end
 end
+
+__END__
+diff --git a/test/Makefile.in b/test/Makefile.in
+index 95e0848..12aadfe 100644
+--- a/test/Makefile.in
++++ b/test/Makefile.in
+@@ -630,8 +630,6 @@ TESTS = \
+ 	test-dvb_demux \
+ 	test-dvb_mux \
+ 	test-hamm \
+-	test-packet-830 \
+-	test-pdc \
+ 	test-raw_decoder \
+ 	test-unicode \
+ 	test-vps
